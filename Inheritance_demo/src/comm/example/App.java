@@ -13,7 +13,7 @@ public class App {
 		System.out.println(employee.getDetails());
 		System.out.println(app.calculateTax(employee));
 		employee=new Engineer("Marry", "Public", "marry@email.com", 19000, "Mechanical");
-		System.out.println(employee.getDetails());
+        System.out.println(employee.getDetails());
 		System.out.println(app.calculateTax(employee));
 	}
 
