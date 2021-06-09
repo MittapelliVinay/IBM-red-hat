@@ -61,6 +61,13 @@ public class MyStack {
 	{
 		return info;
 	}
+
+
+	public int[] sortStack() {
+		 Arrays.sort(info);
+		 return info;
+		
+	}
 	
 }
 	
