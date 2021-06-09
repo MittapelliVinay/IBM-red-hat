@@ -1,5 +1,7 @@
 package com.example.demo;
 
+import java.util.Arrays;
+
 public class MyStack {
 	
 	private int[] info;
@@ -44,6 +46,21 @@ public class MyStack {
 			System.out.println("popped-->> "+info[index--]);
 		}
 	}
-	
 
+
+	public void searchStack(int item)
+	{
+		int position=Arrays.binarySearch(info, item);
+		if(position>=0)
+			System.out.println("item found at "+position+" position");
+		else
+			System.out.println("item not found.");
+	}
+	
+	public int[] displayStack()
+	{
+		return info;
+	}
+	
 }
+	
