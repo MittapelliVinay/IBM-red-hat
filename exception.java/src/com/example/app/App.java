@@ -1,5 +1,7 @@
 package com.example.app;
 
+import java.util.InputMismatchException;
+
 import java.util.Scanner;
 
 import java.util.UUID;
@@ -8,43 +10,49 @@ import com.example.Todo;
 
 public class App {
 
-private static Scanner scanner=new Scanner(System.in);
-	
+	private static Scanner sc=new Scanner(System.in);
 	private Todo[] todos;
-	
 	{
 		todos=new Todo[2];
 	}
-	
 	public static void main(String args[])
 	{
 		App app=new App();
-		for(int i=0;i<2;i++)
-		{
-			try {
-				System.out.print("ToDo Desc: ");
-				String tempDesc=scanner.next();
-				System.out.print("isCompleted? ");
-				boolean tempIsCompleted=scanner.nextBoolean();
-				app.todos[i]=new Todo(UUID.randomUUID().toString(), tempDesc, tempIsCompleted);
-			
-				
-			} catch (ArrayIndexOutOfBoundsException e) {
-				System.err.println("array index out of bound exception.");
+		
+			for(int i=0; i<2;i++)
+			{
+				try {
+				String id=UUID.randomUUID().toString();
+				System.out.println("Enter the desc ");
+				String desc =sc.next();
+				System.out.println("Is Completed?");
+				boolean ic=sc.nextBoolean();
+				app.todos[i]=new Todo(id, desc, ic);
 			}
+				catch (ArrayIndexOutOfBoundsException e)
+				{
+						System.err.println("array index out of bound exception.");
+				}
+				catch(InputMismatchException im)
+				{
+					System.err.println("Enter the correct input");
+					i--;
+					continue;
+				}
 			}
-		for(int i=0;i<=5;i++)
-		{
-			try {
-				
-				System.out.println(app.todos[i]);
-				
-			} catch (ArrayIndexOutOfBoundsException e) {
-				System.out.println("Array Index Out Of Bound.");
+			for(int i=0;i<=5;i++)
+			{
+				try {
+					
+					System.out.println(app.todos[i]);
+					
+				} catch (ArrayIndexOutOfBoundsException e) {
+					System.err.println("Array Index Out Of Bound.");
+					
+				}
 				
 			}
-			
 		}
+
 	}
 
-}

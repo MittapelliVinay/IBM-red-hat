@@ -5,47 +5,40 @@ public class Todo {
 	private String todoId;
 	private String desc;
 	private boolean isCompleted;
+	private String toid;
 	
 	public Todo() {
 		super();
 	}
 
-	public Todo(String todoId, String desc, boolean isCompleted) {
+	public Todo(String toid, String desc, boolean isCompleted) {
 		super();
-		this.todoId = todoId;
+		this.toid = toid;
 		this.desc = desc;
 		this.isCompleted = isCompleted;
 	}
-
-	public String getTodoId() {
-		return todoId;
+	public String getToid() {
+		return toid;
 	}
-
-	public void setTodoId(String todoId) {
-		this.todoId = todoId;
+	public void setToid(String toid) {
+		this.toid = toid;
 	}
-
 	public String getDesc() {
 		return desc;
 	}
-
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
-
 	public boolean isCompleted() {
 		return isCompleted;
 	}
-
 	public void setCompleted(boolean isCompleted) {
 		this.isCompleted = isCompleted;
 	}
-
 	@Override
 	public String toString() {
-		return "Todo [todoId=" + todoId + ", desc=" + desc + ", isCompleted=" + isCompleted + "]";
+		return "Todo [toid=" + toid + ", desc=" + desc + ", isCompleted=" + isCompleted + "]";
 	}
 	
 	
-
 }
