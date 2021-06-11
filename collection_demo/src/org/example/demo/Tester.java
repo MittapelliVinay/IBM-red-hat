@@ -31,6 +31,9 @@ private Map<Integer, Beer> map=null;
 			try {
 				System.out.println("1. Add A New Beer.");
 				System.out.println("2. Display All Available Beer.");
+				System.out.println("3. Fidn A Beer.");
+				System.out.println("4. Delete a Beer.");
+				System.out.println("5. Update a Beer.");
 				System.out.println("0. Quit");
 				System.out.print("Enter Your choice: ");
 				choice=scanner.nextInt();
@@ -53,6 +56,51 @@ private Map<Integer, Beer> map=null;
 					}
 
 					break;
+				case 3:
+					System.out.print("Enter beer id: ");
+					int id=scanner.nextInt();
+					Beer beer=tester.map.get(id);
+					if(beer==null)
+					{
+						System.out.println("no beer found with the id: "+id);
+					}
+					else
+					{
+						System.out.println("Beer Found\n"+beer);
+					}
+					break;
+				case 4:
+					System.out.print("Enter beer id: ");
+					id=scanner.nextInt();
+					beer=tester.map.get(id);
+					if(beer==null)
+					{
+						System.out.println("no beer found with the id: "+id);
+					}
+					else
+					{
+						tester.map.remove(id);
+						System.out.println("Removed Sucessfully");
+					}
+					break;
+				case 5:
+					System.out.println("Enter the beer id to update");
+					id=scanner.nextInt();
+					beer=tester.map.get(id);
+					if(beer==null)
+					{
+						System.out.println("no beer found with the id: "+id);
+					}
+					else
+					{
+						System.out.print("Enter New Beer Name: ");
+						String nname=scanner.next();
+						System.out.print("Enter New Beer Price: ");
+						double nprice=scanner.nextDouble();
+						tester.map.put(id, new Beer(UUID.randomUUID().toString(), nname, nprice));
+						System.out.println("Beer Updated Successfully...");
+						break;
+					}
 				case 0:
 					System.out.println(tester.map);
 					System.out.println("Exit from System. Bye..");
