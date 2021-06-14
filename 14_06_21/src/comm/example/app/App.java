@@ -22,12 +22,12 @@ public static void main(String[] args) {
 			System.out.println(s);
 		}
 		//enum implementation
-		Enumeration<Student> e=vector.elements();
-		while(e.hasMoreElements())
-		{
-			System.out.println(e.nextElement());
-		}
-		//iterator implementation
+				Enumeration<Student> e=vector.elements();
+				while(e.hasMoreElements())
+				{
+					System.out.println(e.nextElement());
+				}
+				//iterator implementation
 		Iterator<Student> i=vector.iterator();
 		while(i.hasNext())
 		{
