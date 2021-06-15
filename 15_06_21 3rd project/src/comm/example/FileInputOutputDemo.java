@@ -1,14 +1,13 @@
 package comm.example;
 
 import java.io.File;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-
 public class FileInputOutputDemo {
+
 
 	public static void main(String[] args) throws IOException {
 		File inputFile=new File("farrago.txt");
