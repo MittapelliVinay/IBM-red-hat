@@ -2,7 +2,7 @@ package comm.example.demo;
 
 import java.io.IOException;
 
-public class EmployeeService {
+public  EmployeeService {
 	
 	public void createEmployeeAndSave(Employee employee)throws IOException {
 	}
