@@ -12,13 +12,28 @@ import lombok.ToString;
 @Setter
 @ToString
 public class Employee {
-	
-	public Employee(int int1, String string, String string2, String string3) {
+
+	public Employee(int nextInt, String firstName2, String lastName2, String email2) {
 		// TODO Auto-generated constructor stub
 	}
 	private Integer id;
 	private String firstName;
 	private String lastName;
 	private String email;
-
+	public String getFirstName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public String getLastName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public int getId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	public String getEmail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
