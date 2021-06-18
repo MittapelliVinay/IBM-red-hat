@@ -36,4 +36,12 @@ public class Employee {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	public void setFirstName(String firstName2) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setEmail(String email2) {
+		// TODO Auto-generated method stub
+		
+	}
 }
