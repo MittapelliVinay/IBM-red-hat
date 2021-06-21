@@ -47,4 +47,10 @@ public class EmployeeServiceImpl implements EmployeeService{
 		return employee;
 	}
 
+	@Override
+	public Employee deleteEmployee(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

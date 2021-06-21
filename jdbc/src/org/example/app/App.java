@@ -75,8 +75,23 @@ public class App {
 				employee=service.updateEmployee(id);
 				System.out.println("Updated Employee:\n"+employee);
 				break;
-				
-			case 0:
+			case 5:
+				System.out.print("enter id: ");
+				Integer id = Integer.parseInt(bufferedReader.readLine());
+				List<Employee> list=service.findById(id);
+				if(list.isEmpty())
+				{
+					System.out.println("NO such record found with id: "+id);
+				}
+				else
+				{
+					for(Employee e:list)
+					{
+						System.out.println(e);
+					}
+				}
+				break;
+						case 0:
 				System.out.println("Bye!");
 				System.exit(0);
 				break;
