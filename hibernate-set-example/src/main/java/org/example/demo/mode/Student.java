@@ -6,6 +6,8 @@ import javax.persistence.CollectionTable;
 import javax.persistence.Column;
 import javax.persistence.ElementCollection;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -34,25 +36,8 @@ public class Student {
 	@CollectionTable(name = "image", joinColumns = @JoinColumn(name="student_id"))
 	@Column(name = "file_name")
 	private Set<String> images=new HashSet<String>();
-	public void setFirstName(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setLastName(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public Set<String> getImages() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	public void setImages(Set<String> set) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setEmail(String string) {
-		// TODO Auto-generated method stub
-		
-	}
+	@Enumerated(EnumType.STRING)
+	@Column(name = "status")
+	private Status status;
 
 }
