@@ -1,0 +1,32 @@
+package org.example.hibernate_crud_demo.model;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Entity
+@Table(name = "employee")
+public class Employee {
+	public Employee(int nextInt, String firstName2, String lastName2, String email2) {
+		// TODO Auto-generated constructor stub
+	}
+	@Id
+	@Column(name = "id")
+	private Integer employeeId;
+	@Column(name = "first_name")
+	private String firstName;
+	@Column(name = "last_name")
+	private String lastName;
+	@Column(name = "email")
+	private String email;
+	
+	
+
+}
