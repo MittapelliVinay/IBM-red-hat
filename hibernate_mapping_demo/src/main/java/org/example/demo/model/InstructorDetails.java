@@ -14,6 +14,7 @@ import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -29,6 +30,18 @@ public class InstructorDetails {
 	private String hobby;
 	@OneToOne(mappedBy = "instructorDetails",cascade = CascadeType.ALL)
 	private Instructor instructor;
-
+	public void setHobby(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setYoutubeChannel(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setInstructor(Instructor instructor2) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 
 }

@@ -38,5 +38,21 @@ public class Instructor {
 	})
 	@JoinColumn(name = "instructor_detail_id")
 	private InstructorDetails instructorDetails;
+	public void setLastName(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setFirstName(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setEmail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setInstructorDetails(InstructorDetails details) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

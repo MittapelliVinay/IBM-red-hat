@@ -7,6 +7,7 @@ import org.example.demo.model.InstructorDetails;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
 /**
  * Hello world!
  *
@@ -28,10 +29,6 @@ public class App {
 			 * instructor.setLastName("Doe"); instructor.setEmail("john@email.com");
 			 * instructor.setInstructorDetails(details); session.getTransaction().begin();
 			 * session.persist(instructor); session.getTransaction().commit();
-			 */
-    	   session.getTransaction().begin();
-    	   Instructor instructor=session.get(Instructor.class, 1);
-			/*
 			 * 
 			 * session.getTransaction().begin(); Instructor
 			 * instructor=session.get(Instructor.class, 1);
@@ -45,15 +42,6 @@ public class App {
 			 * session.delete(instructor); session.getTransaction().commit();
 			 * System.out.println("done");
 			 */
-
-    	   session.delete(instructor);
-    	   session.getTransaction().commit();
-    	   System.out.println("done");
-
-
-	} catch (Exception e) {
-		
-		e.printStackTrace();
 			InstructorDetails details = new InstructorDetails();
 			details.setHobby("Singing");
 			details.setYoutubeChannel("channel-1");
@@ -69,7 +57,9 @@ public class App {
 			session.getTransaction().commit();
 			logger.info("done");
 
-		
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 	}
-    }
 }
