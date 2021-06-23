@@ -41,5 +41,9 @@ public class Course {
 		// TODO Auto-generated method stub
 		
 	}
+	public void setInstructor(Instructor instructor2) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
