@@ -1,4 +1,6 @@
 package org.example.demo.model;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -7,8 +9,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import org.hibernate.annotations.ManyToAny;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -37,22 +42,46 @@ public class Instructor {
 			CascadeType.REMOVE
 	})
 	@JoinColumn(name = "instructor_detail_id")
+	
+	
 	private InstructorDetails instructorDetails;
-	public void setLastName(String string) {
-		// TODO Auto-generated method stub
-		
+	@OneToMany(cascade = {
+			CascadeType.DETACH,
+			CascadeType.MERGE,
+			CascadeType.PERSIST,
+			CascadeType.REFRESH
+	})
+
+	private List<Course> courses;
+
+	public void add(Course tempCourse)
+	{
+		if(courses==null)
+		{
+			courses=new ArrayList<Course>();
+
+		}
+		courses.add(tempCourse);
+		tempCourse.setInstructor(this);
 	}
+
 	public void setFirstName(String string) {
 		// TODO Auto-generated method stub
 		
 	}
-	public void setEmail(String string) {
-		// TODO Auto-generated method stub
-		
-	}
-	public void setInstructorDetails(InstructorDetails details) {
+
+	public void setLastName(String string) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	public void setEmail(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setInstructorDetails(InstructorDetails details) {
+		// TODO Auto-generated method stub
+		
+	}
 }
