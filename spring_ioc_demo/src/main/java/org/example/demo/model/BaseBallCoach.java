@@ -9,4 +9,3 @@ public class BaseBallCoach implements Coach {
 	}
 
 }
-

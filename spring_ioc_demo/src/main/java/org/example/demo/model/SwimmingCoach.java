@@ -1,12 +1,11 @@
 package org.example.demo.model;
 
-public class BaseBallCoach implements Coach {
+public class SwimmingCoach implements Coach {
 
 	@Override
 	public String getDailyworkOut() {
 		// TODO Auto-generated method stub
-		return "practice back volley today";
+		return "practice back swimming today";
 	}
 
 }
-
