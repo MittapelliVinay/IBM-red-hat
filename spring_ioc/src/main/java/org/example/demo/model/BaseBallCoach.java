@@ -7,4 +7,5 @@ public class BaseBallCoach implements Coach {
 		// TODO Auto-generated method stub
 		return "practice back volley today";
 	}
+}
 
