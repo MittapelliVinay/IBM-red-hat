@@ -8,4 +8,3 @@ public class BaseBallCoach implements Coach {
 		return "practice back volley today";
 	}
 
-}
