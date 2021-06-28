@@ -4,12 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
-
+@ToString
 public class Book {
 
 	private Integer bookId;
@@ -20,6 +21,10 @@ public class Book {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Book() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void displayBook() {
 
 
@@ -27,17 +32,14 @@ public class Book {
 		System.out.println("\n");
 	}
 
-	public void setBookId(Integer bookId) {
-		this.bookId = bookId;
-	}
-
 	public Object getBookId() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	public void setBookPrice(Double bookPrice) {
-		this.bookPrice = bookPrice;
+	public Object getBookName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	public Object getBookPrice() {
@@ -45,13 +47,19 @@ public class Book {
 		return null;
 	}
 
-	public void setBookName(String bookName) {
-		this.bookName = bookName;
+	public void setBookId(int int1) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public Object getBookName() {
+	public void setBookName(String string) {
 		// TODO Auto-generated method stub
-		return null;
+		
+	}
+
+	public void setBookPrice(double double1) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
