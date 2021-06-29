@@ -10,17 +10,21 @@ import javax.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
+@ToString
 @Table(name = "employee")
 public class Employee {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+   @Id
+   @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
-	private Integer id;
-	@Column(name = "employee_id")
+   private Integer id;
+   
+   @Column(name = "employee_id")
 	private String employeeId;
 	@Column(name = "first_name")
 	private String firstName;
@@ -28,5 +32,7 @@ public class Employee {
 	private String lastName;
 	@Column(name = "email")
 	private String email;
-
+	
+	
+	
 }

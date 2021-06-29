@@ -10,21 +10,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.EnableLoadTimeWeaving;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.example.demo.entity.Employee;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 @Configuration
 @ComponentScan(basePackages = {"com.example"})
-@EnableTransactionManagement
-
 public class ApplicationConfig {
-	
+
 	@Bean
+	
 	public DataSource dataSource()
 	{
 		ComboPooledDataSource dataSource=new ComboPooledDataSource();
@@ -55,12 +52,12 @@ public class ApplicationConfig {
 		return properties;
 	}
 	
+
 	@Bean
 	@Autowired
 	public HibernateTransactionManager  hibernateTransactionManager (SessionFactory sessionFactory )
 	{
 		HibernateTransactionManager manager=new HibernateTransactionManager(sessionFactory);
-		
 		return manager;
 	}
 	
@@ -69,5 +66,7 @@ public class ApplicationConfig {
 	{
 		return new ModelMapper();
 	}
-
+	
+	
+	
 }
