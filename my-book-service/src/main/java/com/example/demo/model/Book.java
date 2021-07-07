@@ -26,5 +26,21 @@ public class Book {
 		// TODO Auto-generated method stub
 		
 	}
+	public Object getBookName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public Object getBookPrice() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	public void setBookPrice(Object bookPrice2) {
+		// TODO Auto-generated method stub
+		
+	}
+	public void setBookName(Object bookName2) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
