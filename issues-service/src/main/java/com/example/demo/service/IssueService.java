@@ -3,7 +3,7 @@ package com.example.demo.service;
 import java.util.List;
 
 import com.example.demo.model.Issue;
-//import com.google.common.base.Optional;
+import com.google.common.base.Optional;
 
 public interface IssueService {
 
@@ -13,6 +13,4 @@ public interface IssueService {
 	public java.util.Optional<Issue> findIssueById(String id);
 	public Issue updateIssue(String id, Issue issue);
 	public Issue removeIssue(String id);
-	public java.util.Optional<Issue> findIssueByDescription(String description);
-
 }

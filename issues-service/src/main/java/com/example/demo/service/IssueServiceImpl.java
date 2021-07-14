@@ -48,19 +48,6 @@ public class IssueServiceImpl implements IssueService {
 	}
 
 	@Override
-	public Optional<Issue> findIssueByDescription(String description) {
-		Optional<Issue> issue= issueRepository.findByDescription(description);
-		if(issue.isEmpty())
-		{
-			throw new IssueNotFoundException("isue with the given description not found.");
-		}
-		
-		return issue;
-	}
-
-	
-	
-	@Override
 	public Issue updateIssue(String id, Issue issue) {
 		Optional<Issue> issue1=issueRepository.findById(id);
 		if(issue1.isEmpty())

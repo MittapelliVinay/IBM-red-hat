@@ -17,4 +17,5 @@ public class Issue {
 	private String description;
 	private Severity severity;
 	private String assignee;
+
 }

@@ -51,13 +51,7 @@ public class IssueController {
 	public ResponseEntity<Optional<Issue>> getIssueById(@PathVariable("id") String id) {
 		return ResponseEntity.status(HttpStatus.OK).body(issueService.findIssueById(id));
 	}
-	
-	@GetMapping("/issues/{description}")
-	public ResponseEntity<Optional<Issue>> getIssueByDescription(@PathVariable("description") String description) {
-		return ResponseEntity.status(HttpStatus.OK).body(issueService.findIssueByDescription(description));
-	}
-	
-	
+
 	@PutMapping("/issues/{id}")
 	public ResponseEntity<Issue> updateIssue(@PathVariable("id") String id, @RequestBody Issue issue) {
 		return ResponseEntity.ok(issueService.updateIssue(id, issue));
@@ -67,5 +61,4 @@ public class IssueController {
 	public ResponseEntity<Issue> deleteIssue(@PathVariable("id") String id) {
 		return ResponseEntity.ok(issueService.removeIssue(id));
 	}
-
 }
