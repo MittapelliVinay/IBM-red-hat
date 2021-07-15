@@ -1388,3 +1388,39 @@ Identify and stop the process that's listening on port 8081 or configure this ap
 2021-07-14 17:52:18.921  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2021-07-14 17:57:18.934  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2021-07-14 18:02:18.944  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:07:18.948  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:12:18.950  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:17:18.962  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:22:18.978  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:27:18.992  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:32:19.007  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:37:19.017  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:42:19.023  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:47:19.031  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:52:19.039  INFO 13720 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:56:32.835  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-14 18:56:32.840  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ITEM-SERVICE with eureka with status DOWN
+2021-07-14 18:56:32.841  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1626269192840, current=DOWN, previous=UP]
+2021-07-14 18:56:32.841  INFO 13720 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/item-service:a9407ab630f8fcf413d20509fb49846f: registering service...
+2021-07-14 18:56:32.848  INFO 13720 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/item-service:a9407ab630f8fcf413d20509fb49846f - registration status: 204
+2021-07-14 18:56:32.880  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-14 18:56:32.885  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-07-14 18:56:32.903  WARN 13720 --- [RMI TCP Connection(424)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1661)
+ java.base@15.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@15.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2021-07-14 18:56:32.923  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-14 18:56:32.925  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-07-14 18:56:33.160  WARN 13720 --- [RMI TCP Connection(424)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2021-07-14 18:56:33.161  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-14 18:56:33.164  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-07-14 18:56:33.166  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-07-14 18:56:36.185  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-07-14 18:56:36.189  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ITEM-SERVICE/item-service:a9407ab630f8fcf413d20509fb49846f - deregister  status: 200
+2021-07-14 18:56:36.229  INFO 13720 --- [RMI TCP Connection(424)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
