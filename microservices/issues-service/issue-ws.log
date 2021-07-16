@@ -1388,3 +1388,19 @@ Identify and stop the process that's listening on port 8082 or configure this ap
 2021-07-14 18:20:01.203  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2021-07-14 18:25:01.205  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
 2021-07-14 18:30:01.217  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:35:01.221  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:40:01.233  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:45:01.238  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:50:01.243  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:55:01.253  INFO 14016 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2021-07-14 18:56:25.849  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-14 18:56:25.855  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ISSUE-SERVIE with eureka with status DOWN
+2021-07-14 18:56:25.855  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1626269185855, current=DOWN, previous=UP]
+2021-07-14 18:56:25.855  INFO 14016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ISSUE-SERVIE/issue-servie:de159e35acb1c735b2caed53b6d23168: registering service...
+2021-07-14 18:56:25.862  INFO 14016 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ISSUE-SERVIE/issue-servie:de159e35acb1c735b2caed53b6d23168 - registration status: 204
+2021-07-14 18:56:25.887  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-14 18:56:25.889  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-07-14 18:56:25.920  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2021-07-14 18:56:28.938  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2021-07-14 18:56:28.943  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ISSUE-SERVIE/issue-servie:de159e35acb1c735b2caed53b6d23168 - deregister  status: 200
+2021-07-14 18:56:28.985  INFO 14016 --- [RMI TCP Connection(425)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
